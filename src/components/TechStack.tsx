@@ -2,6 +2,7 @@
 import { HoverEffect } from "./ui/CardHoverEffect";
 
 export function TechStack() {
+    
     return (
             <div className=" max-w-7xl relative flex-col mx-auto mt-10 py-32 " id="tech">
             <h1 className=' heading pb-10 '>
