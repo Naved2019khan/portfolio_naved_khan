@@ -9,12 +9,11 @@
 # testing
 /coverage
 
-/_next.zip
 # next.js
 /.next/
 /out/
 
-# productiongit
+# production
 /build
 
 # misc
