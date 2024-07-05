@@ -5,11 +5,11 @@ import { Button } from './ui/MovingBorder'
 export const Experience = () => {
     return (
         <div className='py-20 flex flex-col items-center' id="experience">
-            <h1 className='heading'>
+            <h1 className='heading pb-0 md:pb-10'>
                 Recent
                 <span className='text-purple'> Experience</span>
             </h1>
-            <div className='w-full md:w-[85vw]   mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 items-center '>
+            <div className='w-full md:w-[85vw] mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10 items-center'>
                 {workExperience.map((card) => (
                     <Button borderRadius='1.75rem'
                         duration={Math.floor(Math.random() * 10000) + 10000 }

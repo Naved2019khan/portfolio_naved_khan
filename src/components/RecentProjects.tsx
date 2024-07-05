@@ -12,10 +12,10 @@ const RecentProjects = () => {
             A small selection{' '}
             <span className='text-purple'>recent projects</span>
         </h1>
-        <div className='flex flex-wrap items-center gap-20 justify-center p-4 mt-10'>
+        <div className='flex flex-wrap items-center gap-20  justify-center p-4 mt-10'>
         { projects.map(({id,title,des,img,iconLists,link})=>(
           
-          <div className='lg:min-h-[30rem] h-[28rem] flex items-center justify-center md:w-[450px] w-[90vw]' key={id}>
+          <div className='lg:min-h-[30rem] h-[20rem] flex items-center justify-center md:w-[450px] w-[90vw]' key={id}>
             <PinContainer title={title} href={link} >
             <div className=' relative flex items-center justify-center sm:w-[450px] w-[80vw] overflow-hidden  mb-10'>
               <div className='relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162b]'>

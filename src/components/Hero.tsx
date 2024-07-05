@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
@@ -10,7 +10,8 @@ import animationData from '@/data/Confetti.json'
 import dynamic from 'next/dynamic'
 
 const Hero = () => {
-  const [copied,setCopied] = useState(false)
+  const [copied,setCopied] = useState(true)
+  const [reload,setReload] = useState(false)
   const defaultOptions : Options = {
     loop: copied,
     autoplay: copied,
@@ -21,6 +22,11 @@ const Hero = () => {
   };
   const LottieComponent = dynamic(() => import('./ui/LottieAnimation'), { ssr: false })
 
+  useEffect(()=>{
+    console.log(copied)
+    setCopied(false)
+  },[copied])
+
   const handleCopy = () => {
     setCopied(true);
     setTimeout(() => {
@@ -28,8 +34,7 @@ const Hero = () => {
     }, 4000);
   };
   return (
-    <div className='pb-20 pt-32 '>
-
+    <div className='h-screen '>
       <div className=' absolute top-20 z-[1000] right-4 lg:block hidden '>
         <SocialContact className='  flex-col ' iconClassName='size-16' />
       </div>
@@ -40,10 +45,8 @@ const Hero = () => {
       <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.0 3] bg-grid-black/[0.2]  flex items-center justify-center absolute top-0 left-0">
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       </div>
-      <div className='flex justify-center relative my-20 z-10'>
-
-
-
+      
+<div className='flex justify-center h-full  relative z-10'>
         <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center'>
           <h2 className='uppercase tracking-widest text-xs text-blue-100 max-w-80'>Portfolio build with Next.js</h2>
           <TextGenerateEffect

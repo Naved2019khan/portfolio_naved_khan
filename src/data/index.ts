@@ -171,6 +171,72 @@ export const companies = [
   },
 ];
 
+
+
+export const frameworks = [
+  
+  {
+    id: 1,
+    name: "Shadcn",
+    img: "/frameworks/shadcn.png",
+  },
+  {
+    id: 2,
+    name: "Aceternity UI",
+    img: "/frameworks/aceternity.avif",
+ 
+  },
+  {
+    id: 3,
+    name: "Bootstrap",
+    img: "/frameworks/bootstrap.png",
+  
+  },
+  {
+    id: 4,
+    name: "Material UI",
+    img: "/frameworks/mui.jpg",
+  },
+  {
+    id: 5,
+    name: "Ant Design",
+    img: "/frameworks/antD.png",
+    
+  },
+  {
+    id: 6,
+    name: "Git/GitHub",
+    img: "/frameworks/git.png",
+   
+  },
+  {
+    id: 7,
+    name: "Postman",
+    img: "/frameworks/postman.png",
+  },
+  {
+    id: 8,
+    name: "Jira",
+    img: "/frameworks/jira.jpg",
+  },
+  {
+    id: 9,
+    name: "Slack",
+    img: "/frameworks/slack.png",
+  },
+  {
+    id: 10,
+    name: "Trello",
+    img: "/frameworks/trello.png",
+  },
+  {
+    id: 11,
+    name: "Vscode",
+    img: "/frameworks/vscode.png",
+  },
+  
+];
+
 export const workExperience = [
   {
     id: 1,
