@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     ],
   },
   icons: {
-    icon: '/profile.png',
+    icon: '/profile.svg',
   },
 };
 
